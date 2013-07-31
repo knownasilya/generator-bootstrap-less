@@ -104,7 +104,7 @@ BootstrapLessGenerator.prototype.h5bp = function h5bp() {
 };
 
 BootstrapLessGenerator.prototype.mainStylesheet = function mainStylesheet() {
-  var html = '@import "../bower_components/bootstrap/less/bootstrap.less";\n@import "../bower_components/bootstrap/less/responsive.less"; // Don\'t forget to comment lines 22 to remove the second import call to **mixin.less**\n\n';
+  var html = '@import "../bower_components/bootstrap/less/bootstrap.less";\n\n';
 
   if (this.fontawesome) {
     html = html + '@import "../bower_components/font-awesome/less/font-awesome.less";\n@FontAwesomePath: "../fonts";\n';
