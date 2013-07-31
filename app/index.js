@@ -143,7 +143,6 @@ BootstrapLessGenerator.prototype.writeIndex = function writeIndex() {
       'bower_components/bootstrap/js/bootstrap-transition.js',
       'bower_components/bootstrap/js/bootstrap-button.js',
       'bower_components/bootstrap/js/bootstrap-popover.js',
-      'bower_components/bootstrap/js/bootstrap-typeahead.js',
       'bower_components/bootstrap/js/bootstrap-carousel.js',
       'bower_components/bootstrap/js/bootstrap-scrollspy.js',
       'bower_components/bootstrap/js/bootstrap-collapse.js',
