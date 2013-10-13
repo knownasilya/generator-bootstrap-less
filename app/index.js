@@ -2,6 +2,7 @@
 var util = require('util');
 var path = require('path');
 var yeoman = require('yeoman-generator');
+var chalk = require('chalk');
 
 
 var BootstrapLessGenerator = module.exports = function BootstrapLessGenerator(args, options, config) {
@@ -36,13 +37,13 @@ BootstrapLessGenerator.prototype.askFor = function askFor() {
   var welcome =
   '\n     _-----_' +
   '\n    |       |' +
-  '\n    |' + '--(o)--'.red + '|   .--------------------------.' +
-  '\n   `---------´  |    ' + 'Welcome to Yeoman,'.yellow.bold + '    |' +
-  '\n    ' + '( '.yellow + '_' + '´U`'.yellow + '_' + ' )'.yellow + '   |   ' + 'ladies and gentlemen!'.yellow.bold + '  |' +
+  '\n    |' + chalk.red('--(o)--') + '|   .--------------------------.' +
+  '\n   `---------´  |    ' + chalk.yellow.bold('Welcome to Yeoman,') + '    |' +
+  '\n    ' + chalk.yellow('(') + ' _' + chalk.yellow('´U`') + '_ ' + chalk.yellow(')') + '   |   ' + chalk.yellow.bold('ladies and gentlemen!') + '  |' + 
   '\n    /___A___\\   \'__________________________\'' +
-  '\n     |  ~  |'.yellow +
-  '\n   __' + '\'.___.\''.yellow + '__' +
-  '\n ´   ' + '`  |'.red + '° ' + '´ Y'.red + ' `\n';
+  '\n     ' + chalk.yellow('|  ~  |') +
+  '\n   __' + chalk.yellow('\'.___.\'') + '__' +
+  '\n ´   ' + chalk.red('`  |') + '° ' + chalk.red('´ Y') + ' `\n'; 
 
   console.log(welcome);
 
